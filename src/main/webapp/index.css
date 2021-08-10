@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul,ol li{
+    list-style:none;
+
+
+}
+h2 {
+    top: 100px;
+    position: relative;
+}
+
+img{
+    border:0;
+}
+body,html{
+    background:url("./images/bg5.jpg") no-repeat;
+    background-color: rgb(28, 119, 172);
+}
+.header{
+    min-width: 1200px;
+    height: 62px;
+    background: url("./images/bg5.jpg");
+    border-bottom: 1px solid #d6dfea;
+}
+.header .inner{
+    width: 1160px;
+    height: 62px;
+    padding-left:20px;
+    padding-right:20px;
+    margin: 0 auto;
+}
+
+.header .inner .headlink{
+    float: right;
+    font-size: 12px;
+
+}
+.header .inner .headlink a{
+    font-size: 12px;
+    color: #f7f7f7;
+    line-height: 62px;
+
+}
+.middle{
+    min-width:1200px;
+    height:600px;
+    margin-top:30px;
+
+}
+.middle .cont{
+    margin:auto;
+    width:1200px;
+    height: 600px;
+
+    box-shadow:2px 0px 20px 1px #333;
+
+}
+.middle .cont .class{
+    width:200px;
+    height:600px;
+    float:left;
+    background:rgba(28, 119, 180,0.8);
+    text-align:center;
+}
+.middle .cont .class ul h3{
+    width:200px;
+    height:50px;
+    line-height:50px;
+
+}
+.middle .cont .class>ul>a,li{
+    display:block;
+    width:200px;
+    height:50px;
+    line-height:50px;
+    background:rgba(0,0,0,0.2);
+    margin-top:10px;
+    color:#FFF;
+}
+.middle .cont .class ul .net{
+    background-repeat:no-repeat;
+    background-size:200px 50px;
+}
+.middle .cont .class_a{
+    width:1000px;
+    height:600px;
+    float:left;
+    position:relative;
+    color:#FFF;
+    overflow:hidden;
+}
+.middle .cont .class_a  input{
+    outline:none;
+    border:0;
+    color:#FFF;
+}
+.middle .cont .class_a span{
+    color:#F00;
+}
+.middle .cont .class_a  .all1{
+    width:1000px;
+    height:600px;
+    float:left;
+    position:absolute;
+    display:none;
+    top:0;
+    left:0;
+    text-align:center;
+}
+.middle .cont .class_a  .all1 .tom input{
+    cursor:pointer;
+    background:#3CF;
+    transition:all 0.2s;
+    background:rgba(0, 161, 255,0.8);
+    color:#FFF;
+}
+.middle .cont .class_a  .all1 .tom input:hover{
+    background:#39F;
+}
+.middle .cont .class_a  .all1 .tom input:active{
+    background:#06F;
+}
+.middle .cont .class_a .all1 h4,
+.middle .cont .class_a .all2 h4,
+.middle .cont .class_a .all3 h4,
+.middle .cont .class_a .all4 h4,
+.middle .cont .class_a .all5 h4{
+    width:1000px;
+    text-align:center;
+    height: 58px;
+    line-height: 58px;
+    background:rgba(0,0,0,0.2);
+    border-bottom:2px double #fff;
+}
+.middle .cont .class_a .all2,.all3,.all4,.all5{
+    width:1000px;
+    height:600px;
+    float:left;
+    position:absolute;
+    display:none;
+    top:0;
+    left:0;
+}
+
+.foot{
+    min-width:100%;
+    height:auto;
+    background:#d9e6f7;
+    text-align:center;
+    color:#1d5494;
+    position:fixed;
+    bottom:0px;
+}
+.tab-content {
+    display: none;
+}
+.borrow_btn {
+    color: wheat;
+    background: content-box;
+    width: 75px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 15px;
+    display: inline-block !important;
+    border: solid;
+    text-align: center;
+    text-decoration: none;
+}
+#tab-content1 {
+    display: block;
+}
+.btn_td {
+    text-align: center;
+    display: inline-block;
+}
+a:hover {
+    color: #000;
+}
+
+.table_container {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: antiquewhite;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+#all_1 {
+    display: block;
+}
+
+
+/*模态框的实现*/
+ul, li, ol, dl, dt, dd, div, p, span, h1, h2, h3, h4, h5, h6, a {
+    padding: 0px;
+    margin: 0px;
+}
+
+.login {
+    display: none;
+    width: 512px;
+    height: 280px;
+    position: fixed;
+    border: #ebebeb solid 1px;
+    left: 50%;
+    top: 50%;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px #ddd;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+}
+
+.login-title {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    position: relative;
+    cursor: move;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: chocolate;
+    font-size: 30px;
+}
+
+.login-input-content {
+    margin-top: 20px;
+}
+
+.login-button {
+    width: 100%;
+    margin: 30px auto 0px auto;
+    line-height: 40px;
+    font-size: 20px;
+    border: #ebebeb 1px solid;
+    text-align: center;
+}
+
+.login-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, .3);
+}
+
+
+.login-button a {
+    display: block;
+}
+
+.login-input input.list-input {
+    float: left;
+    line-height: 35px;
+    height: 35px;
+    width: 350px;
+    text-indent: 5px;
+    border-radius: 10px;
+    border: solid lightcoral 1px;
+}
+
+.login-input {
+    overflow: hidden;
+    margin: 0px 0px 20px 0px;
+}
+
+.login-input label {
+    float: left;
+    width: 90px;
+    padding-right: 10px;
+    text-align: right;
+    line-height: 35px;
+    height: 35px;
+    font-size: 14px;
+    color: chocolate;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.login-title span {
+    position: absolute;
+    font-size: 12px;
+    right: -20px;
+    top: -30px;
+    background: #ffffff;
+    border: #ebebeb solid 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+
+
+/*提交按钮的渲染*/
+#login-button-submit {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: cornflowerblue;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#login-button-submit:hover {
+    border: solid 2px skyblue;
+    transition: all 0.2s;
+}
+
+.box{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 30px;
+    top: 138px;
+}
+.box:hover {
+    height: 55px;
+    width: 55px;
+    transition: all 0.2s;
+}
+
+.box .btn {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
